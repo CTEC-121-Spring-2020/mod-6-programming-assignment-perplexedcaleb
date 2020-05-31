@@ -2,13 +2,17 @@
 #   Programming Assignment 10
 #     Prob-3.py
 
-# <YOUR NAME>
+# Caleb Howard
 
 def main():
-    # your code here
-
-    # do not change the while loop definition below
+   # do not change the while loop definition below
+    sum = 0
     while True:
-        # your code here
+        userNumber = float(input("Please type in a number to add. Enter a negative number to quit program. "))
+        if userNumber >= 0:
+            sum = sum + userNumber
+        else:
+            break
+    print("The total of the numbers entered is", sum)
 
 main()    
